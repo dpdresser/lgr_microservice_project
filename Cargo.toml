@@ -18,11 +18,11 @@ path = "src/health-check-service/main.rs"
 [dependencies]
 clap = { version = "4.2", features = ["derive"] }
 pbkdf2 = { version = "0.12", features = ["simple"] }
-prost = "0.11"
-rand_core = { version = "0.6", features = ["std"] }
+prost = "0.13.5"
+rand_core = { version = "0.6.4", features = ["std"] }
 tokio = { version = "1.27", features = ["macros", "rt-multi-thread", "time"] }
-tonic = "0.9"
+tonic = "0.12.3"
 uuid = { version = "1.2", features = ["v4"] }
 
 [build-dependencies]
-tonic-build = "0.9"
+tonic-build = "0.12.3"
