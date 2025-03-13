@@ -10,6 +10,7 @@ use std::collections::HashMap;
 pub trait Users {
     fn create_user(&mut self, username: String, password: String) -> Result<(), String>;
     fn get_user_uuid(&self, username: String, password: String) -> Option<String>;
+    #[allow(dead_code)]
     fn delete_user(&mut self, user_uuid: String);
 }
 
